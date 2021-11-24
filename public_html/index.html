@@ -12,6 +12,7 @@
 
 </head>
 
+<body>
 <!--Navigation Bar-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -89,7 +90,7 @@
 
 <!--About Me-->
 
-<div class="container-lg mt-5 text-dark">
+<div class="container-fluid mt-5 text-dark">
     <h1 class="pt-5 pb-3 text-center">About Me</h1>
     <p class="text-center">
         I'm a student in the Deep Dive Full Stack Web Development at Amarillo College.
@@ -102,7 +103,7 @@
 
 <div class="container-lg mt-15 justify-content-center">
     <div class="row">
-        <div class="col-md-6">
+        <div class="pic col-md-6">
             <img src="../images/firstPicture.JPEG" class="img-fluid rounded mx-auto inline-block"
                  height="auto" width="auto" alt="Picture of Lindros"/>
         </div>
@@ -117,7 +118,7 @@
             <form action="./apis" id="contact" method="post" novalidate>
                 <h1>Contact Me</h1>
                 <div class="col">
-                    <label for="name" class="form-label">full name</label>
+                    <label for="name" class="form-label">Full Name</label>
                     <input type="text" class="form-control" name="name" id="name">
                 </div>
                 <div class="col">
@@ -125,13 +126,15 @@
                     <input type="email" class="form-control" name="email" id="email">
                 </div>
                 <div class="col">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" name="subject" id="subject">
+                </div>
+                <div class="col">
                     <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" name="message" id="message" rows="five"></textarea>
                 </div>
-                <div class="g-recaptcha" data-sitekey=""></div>
-                <button id="submit" type="submit" class="btn btn-primary">
-
-                </button>
+                <div class="g-recaptcha" data-sitekey="6Lf0SFgdAAAAAFRXaZTsDiO4n4dERw7cPv4h4UXW"></div>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
             </form>
             <div id="output-area"></div>
         </div>
@@ -139,61 +142,27 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-
-
-
-<!--Jquery-->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-<!--Forms, Validate, etc.-->
-
+<script crossorigin="anonymous"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<!-- jQuery Form, Validate, Additional Methods, -->
 <script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
 <script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+<!-- Google reCAPTCHA -->
 <script src='https://www.google.com/recaptcha/api.js'></script>
-<script src="script.js"></script>
 
+<!-- custom jquery script-->
+<script src="./js/script.js"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
 </html>
